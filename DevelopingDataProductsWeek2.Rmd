@@ -1,0 +1,12 @@
+# Developing Data Products - Project week 2
+10 Aug 2019
+
+## Map Tower of London
+```{r, echo=TRUE}
+library(leaflet)
+map <-
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=51.508114, lng= -0.075949, popup="Tower of London")
+map
+```
